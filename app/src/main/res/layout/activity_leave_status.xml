@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaveStatusActivity">
+
+    <ImageView
+        android:id="@+id/img_Status"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="163dp"
+        android:background="@color/colorPrimary"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="88dp"
+        android:text="No Pending Request."
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Status" />
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="139dp"
+        android:text="Name of student"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Status" />
+
+    <TextView
+        android:id="@+id/tv_RollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="180dp"
+        android:text="RollNo"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Name" />
+
+    <TextView
+        android:id="@+id/tv_RoomNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="165dp"
+        android:text="RoomNo"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RollNo" />
+
+    <TextView
+        android:id="@+id/tv_leaveDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="142dp"
+        android:text="Leave date time"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RoomNo" />
+
+    <TextView
+        android:id="@+id/tv_returnDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="142dp"
+        android:text="Return Date Time"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_leaveDateTime" />
+</android.support.constraint.ConstraintLayout>
